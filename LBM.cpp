@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
     MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
     if (myrank == 0) {
-        //Print_disclaimer();
+        Print_disclaimer();
         //std::cout << "taw: " << tau << std::endl;
         omp_set_num_threads(omp_get_max_threads());
         int numThreads = omp_get_max_threads();
